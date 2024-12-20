@@ -1,0 +1,44 @@
+{
+  "name": "common-mime-types",
+  "version": "0.0.1",
+  "description": "common-mime-types",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build": "vite build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mime types",
+    "common mime types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbb00/common-mime-types.git"
+  },
+  "author": "lbb00",
+  "license": "The Unlicense",
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.4",
+    "vite-plugin-dts": "^4.3.0",
+    "vitest": "^2.1.8"
+  },
+  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a",
+  "pnpm": {
+    "overrides": {
+      "esbuild": "0.24.0"
+    }
+  }
+}
