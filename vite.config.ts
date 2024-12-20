@@ -18,9 +18,8 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      include: Object.keys(entry).map((i) => entry[i]),
       entryRoot: 'src',
-      insertTypesEntry: true,
+      rollupTypes: true,
     }),
   ],
 })

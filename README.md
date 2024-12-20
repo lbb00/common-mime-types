@@ -7,15 +7,16 @@
 [![License](https://img.shields.io/github/license/lbb00/common-mime-types.svg)](https://github.com/lbb00/common-mime-types/blob/master/LICENSE)
 [![Npm download](https://img.shields.io/npm/dw/common-mime-types.svg)](https://www.npmjs.com/package/common-mime-types)
 
-> This list is generated from https://developer.mozilla.org/en-US/docs/Web/HTTP/MIME_types/Common_types by ChatGPT at 2024-12-19.
+This library includes [important MIME types for the Web](https://developer.mozilla.org/en-US/docs/Web/HTTP/MIME_types/Common_types).
 
 ## Usage
 
 ```ts
 import { mimeTypes, mime2ext, ext2mime } from 'common-mime-types'
 
-console.log(mimeTypes)
-
 const ext = mime2ext('image/png')
 const mimeType = ext2mime('.png')
+
+mimeTypes.find((m) => m.mime === 'image/png')?.ext
+mimeTypes.find((m) => m.ext === '.png')?.mime
 ```

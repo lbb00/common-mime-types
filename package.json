@@ -1,7 +1,7 @@
 {
   "name": "common-mime-types",
-  "version": "0.0.1",
-  "description": "common-mime-types",
+  "version": "0.1.0",
+  "description": "This library includes important MIME types for the Web.",
   "type": "module",
   "exports": {
     ".": {
@@ -21,14 +21,15 @@
   ],
   "keywords": [
     "mime types",
-    "common mime types"
+    "common mime types",
+    "mime types for the web"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lbb00/common-mime-types.git"
   },
   "author": "lbb00",
-  "license": "The Unlicense",
+  "license": "Unlicense",
   "devDependencies": {
     "typescript": "^5.7.2",
     "vite": "^6.0.4",
