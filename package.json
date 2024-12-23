@@ -1,6 +1,6 @@
 {
   "name": "common-mime-types",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A lightweight TypeScript/JavaScript library for bidirectional conversion between file extensions and common web MIME types.",
   "type": "module",
   "exports": {
@@ -33,14 +33,9 @@
   "license": "Unlicense",
   "devDependencies": {
     "typescript": "^5.7.2",
-    "vite": "^6.0.4",
+    "vite": "^6.0.5",
     "vite-plugin-dts": "^4.3.0",
     "vitest": "^2.1.8"
   },
-  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a",
-  "pnpm": {
-    "overrides": {
-      "esbuild": "0.24.0"
-    }
-  }
+  "packageManager": "pnpm@9.13.2+sha512.88c9c3864450350e65a33587ab801acf946d7c814ed1134da4a924f6df5a2120fd36b46aab68f7cd1d413149112d53c7db3a4136624cfd00ff1846a0c6cef48a"
 }
