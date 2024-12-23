@@ -7,16 +7,27 @@
 [![License](https://img.shields.io/github/license/lbb00/common-mime-types.svg)](https://github.com/lbb00/common-mime-types/blob/master/LICENSE)
 [![Npm download](https://img.shields.io/npm/dw/common-mime-types.svg)](https://www.npmjs.com/package/common-mime-types)
 
-This library includes [important MIME types for the Web](https://developer.mozilla.org/en-US/docs/Web/HTTP/MIME_types/Common_types).
+A lightweight TypeScript/JavaScript library for handling common web MIME types. The MIME type definitions are sourced from [MDN Web Docs - Common MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/MIME_types/Common_types).
+
+## Features
+
+- 🎯 Includes most commonly used MIME types on the web
+- 🔄 Bidirectional conversion between file extensions and MIME types
+- 📦 Lightweight with zero dependencies
+- 💪 Written in TypeScript with full type support
 
 ## Usage
 
 ```ts
 import { mimeTypes, mime2ext, ext2mime } from 'common-mime-types'
 
-const ext = mime2ext('image/png')
-const mimeType = ext2mime('.png')
+// Convert MIME type to file extension
+const ext = mime2ext('image/png') // Returns '.png'
 
+// Convert file extension to MIME type
+const mimeType = ext2mime('.png') // Returns 'image/png'
+
+// Search in mimeTypes array
 mimeTypes.find((m) => m.mime === 'image/png')?.ext
 mimeTypes.find((m) => m.ext === '.png')?.mime
 ```

@@ -1,7 +1,7 @@
 {
   "name": "common-mime-types",
   "version": "0.1.0",
-  "description": "This library includes important MIME types for the Web.",
+  "description": "A lightweight TypeScript/JavaScript library for bidirectional conversion between file extensions and common web MIME types.",
   "type": "module",
   "exports": {
     ".": {
@@ -20,9 +20,10 @@
     "dist"
   ],
   "keywords": [
-    "mime types",
-    "common mime types",
-    "mime types for the web"
+    "mimetypes",
+    "file extensions",
+    "web mime types",
+    "MDN Common MIME Types"
   ],
   "repository": {
     "type": "git",
