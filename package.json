@@ -1,6 +1,6 @@
 {
   "name": "common-mime-types",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A lightweight TypeScript/JavaScript library for bidirectional conversion between file extensions and common web MIME types.",
   "type": "module",
   "exports": {

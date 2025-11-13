@@ -19,13 +19,19 @@ A lightweight TypeScript/JavaScript library for handling common web MIME types. 
 ## Usage
 
 ```ts
-import { mimeTypes, mime2ext, ext2mime } from 'common-mime-types'
+import { mimeTypes, mime2ext, ext2mime, getType, getSubType } from 'common-mime-types'
 
 // Convert MIME type to file extension
 const ext = mime2ext('image/png') // Returns '.png'
 
 // Convert file extension to MIME type
 const mimeType = ext2mime('.png') // Returns 'image/png'
+
+// Get the type part of a MIME type
+const type = getType('image/png') // Returns 'image'
+
+// Get the subtype part of a MIME type
+const subType = getSubType('image/png') // Returns 'png'
 
 // Search in mimeTypes array
 mimeTypes.find((m) => m.mime === 'image/png')?.ext
