@@ -1,5 +1,16 @@
-import { describe, it, expect } from 'vitest'
-import { mime2ext, ext2mime, mimeTypes, getType, getSubType } from '../src/index.js'
+import { describe, it, expect, beforeEach } from 'vitest'
+import {
+  mime2ext,
+  ext2mime,
+  mimeTypes,
+  getType,
+  getSubType,
+  addMimeType,
+  addMimeTypes,
+  removeMimeType,
+  clearExtendedMimeTypes,
+  getExtendedMimeTypes,
+} from '../src/index.js'
 
 describe('mime2ext', () => {
   it('should return the correct extension for a given MIME type', () => {

@@ -1,4 +1,4 @@
-import { mimeTypes } from './mime-types'
+import { mimeTypes, type MIMETypeConfig } from './mime-types'
 
 export * from './mime-types'
 
@@ -20,4 +20,13 @@ export function getType(mime: string): string {
 
 export function getSubType(mime: string): string {
   return splitMimeType(mime)[1]
+}
+
+export function addMimeTypes(newMimeTypes: MIMETypeConfig[]): void {
+  newMimeTypes.forEach((mimeType) => {
+    const index = mimeTypes.findIndex((m) => m.ext === mimeType.ext)
+    if (index === -1) {
+      mimeTypes.push(mimeType)
+    }
+  })
 }

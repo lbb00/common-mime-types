@@ -1,7 +1,13 @@
 /**
  * Generated from https://developer.mozilla.org/en-US/docs/Web/HTTP/MIME_types/Common_types by ChatGPT at 2024-12-19.
  */
-export const mimeTypes = [
+
+export type MIMETypeConfig = {
+  ext: string
+  mime: string
+}
+
+export const mimeTypes: MIMETypeConfig[] = [
   { ext: '.aac', mime: 'audio/aac' },
   { ext: '.abw', mime: 'application/x-abiword' },
   { ext: '.apng', mime: 'image/apng' },
